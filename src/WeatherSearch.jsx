@@ -24,8 +24,6 @@ const WeatherSearch = () => {
     justifyContent: 'space-around',
     backgroundImage: `url(${img1})`,
     width: 'auto',
-    height: '100vh',
-    padding: '20px',
     color: 'white',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
