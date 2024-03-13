@@ -10,9 +10,10 @@ import Box from '@mui/material/Box';
 import img1 from './assets/sunny2.jpg'
 import './index.css'
 const WeatherSearch = () => {
+  
   const [location, setLocation] = useState('');
   const navigate = useNavigate();
-  const apiKey = '8ff6b1c427824112b02b9f92f1485bbb'; // Replace with your actual Weatherbit API key
+  const apiKey = import.meta.env.VITE_WEATHER_BIT_API_KEY;
 
   const handleSearch = () => {
     const apiUrl = `https://api.weatherbit.io/v2.0/history/energy?city=${location}&key=${apiKey}&tp=daily`;

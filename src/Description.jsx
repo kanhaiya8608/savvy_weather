@@ -16,7 +16,7 @@ const Description = () => {
 const [countryCode, setCountryCode] = useState('');
 
 const [currentTime, setCurrentTime] = useState('');
-  const apiKey = '8ff6b1c427824112b02b9f92f1485bbb'; 
+const apiKey = import.meta.env.VITE_WEATHER_BIT_API_KEY;
 
   
   const getWeatherSymbol = (day) => {
